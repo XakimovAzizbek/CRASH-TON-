@@ -31,9 +31,11 @@
 
         <!-- Game Area -->
         <main class="game-area" id="game-area">
+
             <!-- Win Toast -->
             <div class="win-toast" id="win-toast">🎉 +0.000000 TON</div>
 
+            <!-- Multiplier -->
             <div class="multiplier-display">
                 <div class="multiplier-ring" id="multiplier-ring">
                     <h1 id="multiplier">1.00x</h1>
@@ -42,13 +44,9 @@
                 <p id="game-status">Reklama ko'rilgach, o'yin boshlanadi</p>
             </div>
 
-            <!-- Rocket -->
+            <!-- Rocket (faqat animatsiya uchun, chiziqsiz) -->
             <div class="rocket-emoji" id="rocket">🚀</div>
 
-            <!-- Chart line -->
-            <div class="chart-container">
-                <div id="rocket-line"></div>
-            </div>
         </main>
 
         <!-- Footer -->
@@ -63,15 +61,12 @@
                     <span class="stat-value" id="round-count">0</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-label">Jami</span>
+                    <span class="stat-label">Jami TON</span>
                     <span class="stat-value" id="total-won">0.00</span>
                 </div>
             </div>
 
-            <div class="footer-top">
-                <button id="action-btn" class="btn">▶ START (Reklama)</button>
-            </div>
-
+            <button id="action-btn" class="btn">▶ START (Reklama)</button>
             <button id="withdraw-btn" class="btn">💸 Yechish (Withdraw)</button>
         </footer>
 
