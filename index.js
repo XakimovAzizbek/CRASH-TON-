@@ -3,7 +3,7 @@ const tg = window.Telegram.WebApp;
 tg.expand();
 
 // Adsgram Init (O'z blockId-ingizni kiriting)
-const AdController = window.Adsgram.init({ blockId: "your-block-id" });
+const AdController = window.Adsgram.init({ blockId: "int-30438" });
 
 // ─── O'YIN O'ZGARUVCHILARI ───
 let balance     = parseFloat(localStorage.getItem('ton_balance')) || 0;
