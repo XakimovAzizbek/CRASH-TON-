@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash TON</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+
+        <!-- Header -->
+        <header>
+            <div class="brand">
+                <div class="brand-icon">🚀</div>
+                <div class="brand-text">
+                    <span class="brand-name">CRASH TON</span>
+                    <span class="brand-sub">Telegram Mini App</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <span class="balance-label">Balans</span>
+                <div class="balance-value">
+                    <span id="balance">0.000000</span>
+                    <span class="currency">TON</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Game Area -->
+        <main class="game-area" id="game-area">
+            <!-- Win Toast -->
+            <div class="win-toast" id="win-toast">🎉 +0.000000 TON</div>
+
+            <div class="multiplier-display">
+                <div class="multiplier-ring" id="multiplier-ring">
+                    <h1 id="multiplier">1.00x</h1>
+                    <span class="multiplier-tag">MULTIPLIER</span>
+                </div>
+                <p id="game-status">Reklama ko'rilgach, o'yin boshlanadi</p>
+            </div>
+
+            <!-- Rocket -->
+            <div class="rocket-emoji" id="rocket">🚀</div>
+
+            <!-- Chart line -->
+            <div class="chart-container">
+                <div id="rocket-line"></div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="stats-row">
+                <div class="stat-card">
+                    <span class="stat-label">Eng yuqori</span>
+                    <span class="stat-value" id="best-mult">—</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Raundlar</span>
+                    <span class="stat-value" id="round-count">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Jami</span>
+                    <span class="stat-value" id="total-won">0.00</span>
+                </div>
+            </div>
+
+            <div class="footer-top">
+                <button id="action-btn" class="btn">▶ START (Reklama)</button>
+            </div>
+
+            <button id="withdraw-btn" class="btn">💸 Yechish (Withdraw)</button>
+        </footer>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
